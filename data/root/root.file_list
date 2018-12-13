@@ -49,6 +49,11 @@ TEMPLATE rubygem-yard: ignore
   # just a template that does nothing
   d .
 
+TEMPLATE skelcd-control-.*:
+  d var/lib/fallback-repo
+  # copy the rpm itself to directory
+  P var/lib/fallback-repo
+
 # avoid 'iterm' terminfo, instead link to generic 'screen'
 TEMPLATE libiterm.*:
   /
